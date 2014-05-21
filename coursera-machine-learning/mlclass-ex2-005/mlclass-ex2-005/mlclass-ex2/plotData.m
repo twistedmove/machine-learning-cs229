@@ -13,11 +13,20 @@ figure; hold on;
 %
 
 
+plot(X(:,1)(find(y==1)), X(:,2)(find(y==1)),'k+', 'LineWidth', 2, 'MarkerSize', 7);
+plot(X(:,1)(find(y==0)), X(:,2)(find(y==0)),'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 
 
 
-
-
+#{
+% Find Indices ofpos = find(y==1);Positive andneg = find(yNegative== 0);
+Examples
+% Plot Examples
+plot(X(pos, 1), X(pos, 2), 'k+','LineWidth', 2, ...
+'MarkerSize', 7);
+plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', ...
+'MarkerSize', 7);
+#}
 
 
 % =========================================================================
